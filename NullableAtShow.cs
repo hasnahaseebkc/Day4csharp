@@ -11,8 +11,15 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
 
+
             //shorthand syntax for nullable types
-            //Nullable<int> i = null;
+            Nullable<int> i = null;
+            if (i.HasValue)     //HasValue is a property
+                Console.WriteLine(i);
+            else
+                Console.WriteLine("Null");
+
+            Console.WriteLine();
 
             int? num1 = null;
             int? num2 = 45;
@@ -28,7 +35,9 @@ namespace ConsoleApp2
 
 
 
-            //*************
+            //************* COALESCING OPERATOR NULLABLE ****************
+
+
             Console.WriteLine();
 
             double? n1 = null;
@@ -41,6 +50,20 @@ namespace ConsoleApp2
             n3 = n2 ?? 5.34;
             Console.WriteLine("Value of n3: {0}", n3);
 
+
+            //************************ NULLABLE HELPER CLASS **************88
+
+            int? l = null;
+            int m = 10;
+
+            if (l < m)
+                Console.WriteLine("l < m");
+            else if (l > 10)
+                Console.WriteLine("l > m");
+            else if (l == 10)
+                Console.WriteLine("i==j");
+            else
+                Console.WriteLine("Could not compare");
 
 
             Console.ReadLine();

@@ -110,6 +110,43 @@ namespace ConsoleApp2
             //************************** BIT ARRAYS *************************
 
 
+            //creating two bit arrays of size 8
+            BitArray ba1 = new BitArray(4);
+            BitArray ba2 = new BitArray(4);
+            byte[] a = { 0 };
+            byte[] b = { 15 };
+
+            //storing the values 0, and 15 into the bit arrays
+            ba1 = new BitArray(a);
+            ba2 = new BitArray(b);
+
+            // content of ba1
+            Console.WriteLine("bit array ba1: 0");
+
+            for (int i = 0; i < 4; i++)
+                Console.Write("{0}", ba1[i]);
+
+            Console.WriteLine();
+
+            // content of ba2
+            Console.WriteLine("bit array ba2: 15");
+
+            for (int i = 0; i < 4; i++)
+                Console.Write("{0}", ba2[i]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             Console.ReadLine();
